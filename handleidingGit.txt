@@ -1,18 +1,12 @@
+INSTALL GIT
 git init
+
+Nieuw commit
 git add -A
 git commit -m "login"
 
-<!--->
-git checkout -- .
+UPDATE PULL
+git fetch
+git pull origin master/main
 
 
-<!---->
-ssh-keygen -t ed25519 -C "GiliamvanTol2@gmail.com"
-ENTER
-ENTER
-ENTER
-
-cd ~/.ssh 
-ls
-cat id_255519.pub 
-COPY HEEL OUTPUT
