@@ -9,4 +9,7 @@ UPDATE PULL
 git fetch
 git pull origin master/main
 
+Branch Wissel
+git checkout master/dynmisch/BranchNaam
+
 
