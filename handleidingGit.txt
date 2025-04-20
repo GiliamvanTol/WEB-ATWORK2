@@ -1,2 +1,6 @@
 git init
 git add -A
+git commit -m "log in"
+
+<!--->
+git checkout -- .
