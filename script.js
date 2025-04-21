@@ -1,9 +1,17 @@
+const template = document.querySelector("#pet-card-template");
+const wrapper = document.createDocumentFragment();
+
 async function petsArea() {
-    const petsPromise = await fetch("https://learnwebcode.github.io/bootcamp-pet-data/pets.json");
-    const petsData = await petsPromise.json();
+    const petsPromise = await fetch("https://learnwebcode.github.io/bootcamp-pet-data/pets.json")
+    const petsData = await petsPromise.json()
     petsData.forEach(pet => {
-        console.log(pet.name);
-    })   
+        const clone = template.content.cloneNode(true)
+
+         clone.querySelector("h3").textContent = pet.name
+
+        wrapper.appendChild(clone)
+    });   
+    document.querySelector(".list-of-pets").appendChild(wrapper)
 }
 
 petsArea();
